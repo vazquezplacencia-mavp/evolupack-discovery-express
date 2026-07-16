@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discovery Express de Evolupack Studio">
+  <title>Evolupack Studio · Discovery Express</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><a class="brand" href="#inicio" aria-label="Evolupack Studio">evolupack<span>studio</span></a><span>DISCOVERY EXPRESS</span></header>
+    <section class="hero" id="inicio">
+      <p class="eyebrow">PRIMER PASO</p><h1>Descubramos tu marca</h1>
+      <p>Una conversación breve para entender tu producto y crear un empaque que realmente lo represente.</p>
+      <div class="note"><strong>No necesitas saber de diseño ni de empaques.</strong><br>Cuéntanos lo que sabes mejor que nadie: tu producto, tu historia y lo que quieres lograr.</div>
+      <div class="stats"><span><b>15</b> PREGUNTAS</span><span><b>10 min</b> APROX.</span><span><b>0</b> TECNICISMOS</span></div>
+    </section>
+
+    <form id="discovery-form" action="" method="POST">
+      <input type="hidden" name="formulario" value="Evolupack Discovery Express">
+      <section class="section"><p class="section-label">01 / TU PRODUCTO</p><h2>Empecemos por lo esencial</h2><p class="intro">Responde con tus propias palabras. Si algo todavía no está definido, puedes escribir “no lo sé”.</p>
+        <label>1. ¿Cómo se llama tu marca?<input required name="marca" autocomplete="organization"></label>
+        <label>2. ¿Qué producto vendes o quieres lanzar?<small>Ejemplo: café, botanas, especias, alimento para mascotas, miel o chocolate.</small><textarea required name="producto" rows="3"></textarea></label>
+        <label>3. ¿Qué hace especial a tu producto?<small>Puede ser su receta, origen, ingredientes, proceso, sabor o la historia detrás de él.</small><textarea required name="diferenciador" rows="3"></textarea></label>
+        <label>4. ¿Qué presentaciones tendrá?<small>Indica tamaños, pesos, sabores o variedades.</small><textarea name="presentaciones" rows="3"></textarea></label>
+        <fieldset><legend>5. ¿Cómo empacas actualmente?</legend><div class="options"><label><input type="checkbox" name="empaque_actual" value="Bolsa genérica + etiqueta">Bolsa genérica + etiqueta</label><label><input type="checkbox" name="empaque_actual" value="Bolsa impresa">Bolsa impresa</label><label><input type="checkbox" name="empaque_actual" value="Frasco o caja">Frasco o caja</label><label><input type="checkbox" name="empaque_actual" value="Aún no empaco">Aún no empaco</label><label><input type="checkbox" name="empaque_actual" value="Otro">Otro</label></div></fieldset>
+      </section>
+      <section class="section"><p class="section-label">02 / TUS CLIENTES Y TU META</p><h2>¿A quién queremos conectar?</h2><p class="intro">No necesitas tener un estudio de mercado; describe a las personas que normalmente compran tu producto.</p>
+        <label>6. ¿Quién compra tu producto?<small>¿Qué edad tiene, qué le importa y por qué lo elegiría?</small><textarea required name="cliente" rows="3"></textarea></label>
+        <fieldset><legend>7. ¿Dónde vendes hoy?</legend><div class="options"><label><input type="checkbox" name="venta_actual" value="Redes sociales">Redes sociales</label><label><input type="checkbox" name="venta_actual" value="Tienda propia">Tienda propia</label><label><input type="checkbox" name="venta_actual" value="Mercados">Mercados</label><label><input type="checkbox" name="venta_actual" value="Cafeterías o tiendas">Cafeterías o tiendas</label><label><input type="checkbox" name="venta_actual" value="Marketplaces">Marketplaces</label><label><input type="checkbox" name="venta_actual" value="Distribuidores">Distribuidores</label><label><input type="checkbox" name="venta_actual" value="Otro">Otro</label></div></fieldset>
+        <label>8. ¿Dónde te gustaría vender en los próximos 2 o 3 años?<textarea name="meta_venta" rows="3"></textarea></label>
+        <fieldset><legend>9. ¿Qué quieres lograr con este nuevo empaque?</legend><div class="options"><label><input type="checkbox" name="objetivo" value="Verme más profesional">Verme más profesional</label><label><input type="checkbox" name="objetivo" value="Destacar en anaquel">Destacar en anaquel</label><label><input type="checkbox" name="objetivo" value="Dejar las etiquetas">Dejar las etiquetas</label><label><input type="checkbox" name="objetivo" value="Entrar a nuevas tiendas">Entrar a nuevas tiendas</label><label><input type="checkbox" name="objetivo" value="Lanzar una línea">Lanzar una línea</label><label><input type="checkbox" name="objetivo" value="Subir valor percibido">Subir valor percibido</label><label><input type="checkbox" name="objetivo" value="Otro">Otro</label></div></fieldset>
+        <label>10. ¿Con qué marcas compites o cuáles admiras?<small>No importa si pertenecen a otra categoría.</small><textarea name="referentes" rows="3"></textarea></label>
+      </section>
+      <section class="section"><p class="section-label">03 / PERSONALIDAD Y CONTENIDO</p><h2>Démosle una personalidad</h2><p class="intro">Estas respuestas nos ayudan a crear un empaque que se sienta auténtico y coherente.</p>
+        <fieldset><legend>11. Si tu marca fuera una persona, ¿cómo sería?</legend><div class="options"><label><input type="checkbox" name="personalidad" value="Cercana">Cercana</label><label><input type="checkbox" name="personalidad" value="Natural">Natural</label><label><input type="checkbox" name="personalidad" value="Artesanal">Artesanal</label><label><input type="checkbox" name="personalidad" value="Moderna">Moderna</label><label><input type="checkbox" name="personalidad" value="Premium">Premium</label><label><input type="checkbox" name="personalidad" value="Divertida">Divertida</label><label><input type="checkbox" name="personalidad" value="Tradicional">Tradicional</label><label><input type="checkbox" name="personalidad" value="Minimalista">Minimalista</label><label><input type="checkbox" name="personalidad" value="Confiable">Confiable</label><label><input type="checkbox" name="personalidad" value="Audaz">Audaz</label></div></fieldset>
+        <fieldset><legend>12. ¿Qué emoción quieres transmitir al verla?</legend><div class="options"><label><input type="checkbox" name="emocion" value="Confianza">Confianza</label><label><input type="checkbox" name="emocion" value="Calidad">Calidad</label><label><input type="checkbox" name="emocion" value="Alegría">Alegría</label><label><input type="checkbox" name="emocion" value="Bienestar">Bienestar</label><label><input type="checkbox" name="emocion" value="Tradición">Tradición</label><label><input type="checkbox" name="emocion" value="Energía">Energía</label><label><input type="checkbox" name="emocion" value="Exclusividad">Exclusividad</label><label><input type="checkbox" name="emocion" value="Cuidado">Cuidado</label></div></fieldset>
+        <label>13. ¿Qué elementos debemos respetar?<small>Logo, colores, ilustraciones, personajes o cualquier elemento que tus clientes ya reconozcan.</small><textarea name="elementos_respetar" rows="3"></textarea></label>
+        <fieldset><legend>14. ¿Ya cuentas con la información que debe llevar el empaque?</legend><div class="options"><label><input type="checkbox" name="informacion" value="Ingredientes">Ingredientes</label><label><input type="checkbox" name="informacion" value="Tabla nutrimental">Tabla nutrimental</label><label><input type="checkbox" name="informacion" value="Código de barras">Código de barras</label><label><input type="checkbox" name="informacion" value="Datos de contacto">Datos de contacto</label><label><input type="checkbox" name="informacion" value="Contenido neto">Contenido neto</label><label><input type="checkbox" name="informacion" value="Lote/caducidad">Lote/caducidad</label><label><input type="checkbox" name="informacion" value="Aún no">Aún no</label></div></fieldset>
+        <label>15. Si alguien viera tu producto durante 3 segundos, ¿qué única cosa te gustaría que recordara?<textarea required name="recuerdo" rows="3"></textarea></label>
+      </section>
+      <section class="contact section"><p class="section-label">DATOS DE CONTACTO</p><h2>¿A quién le escribimos?</h2><div class="two"><label>Nombre completo<input required name="nombre" autocomplete="name"></label><label>Correo electrónico<input required type="email" name="email" autocomplete="email"></label><label>Teléfono<input name="telefono" autocomplete="tel"></label></div></section>
+      <div class="submit"><p>Gracias por compartir tu historia. Con esta información podremos proponerte un camino claro para hacer crecer tu marca.</p><button type="submit">Enviar mis respuestas</button><p id="message" role="status"></p></div>
+    </form>
+  </main><footer>Diseñamos el empaque que hace crecer tu marca.</footer><script src="script.js"></script>
+</body></html>
