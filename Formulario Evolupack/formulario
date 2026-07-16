@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evolupack Studio — Discovery Express</title>
+<meta name="description" content="Formulario Discovery Express de Evolupack Studio: cuéntanos tu marca y recibe una cotización de tu empaque.">
+<link rel="stylesheet" href="landing.css">
+</head>
+<body>
+<div class="page-shell">
+
+  <header class="hero">
+    <img class="logo" src="marca/logo_cropped.png" alt="Evolupack Studio">
+    <div class="hero-copy">
+      <p class="eyebrow">Primer paso · Discovery Express</p>
+      <h1>Descubramos tu marca</h1>
+      <p class="intro">Una conversación breve para entender tu producto y crear un empaque que realmente lo represente. No necesitas saber de diseño ni de empaques: cuéntanos lo que sabes mejor que nadie —tu producto, tu historia y lo que quieres lograr— y nosotros lo traduciremos en una cotización clara y posible de producir.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#formulario">Llenar el formulario</a>
+        <a class="button button-secondary" href="entregables/Evolupack_Studio_Discovery_Express_Rellenable.pdf">Descargar versión PDF</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="card" style="margin:32px 0;">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center;">
+      <div>
+        <div style="font-family:'Montserrat';font-weight:800;font-size:1.9rem;color:var(--brand-blue);">15</div>
+        <div style="font-weight:700;font-size:0.75rem;letter-spacing:0.08em;color:var(--brand-gray);">PREGUNTAS</div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat';font-weight:800;font-size:1.9rem;color:var(--brand-blue);">10 min</div>
+        <div style="font-weight:700;font-size:0.75rem;letter-spacing:0.08em;color:var(--brand-gray);">APROX.</div>
+      </div>
+      <div>
+        <div style="font-family:'Montserrat';font-weight:800;font-size:1.9rem;color:var(--brand-blue);">0</div>
+        <div style="font-weight:700;font-size:0.75rem;letter-spacing:0.08em;color:var(--brand-gray);">TECNICISMOS</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="questions-section" id="formulario">
+    <form id="discovery-form">
+
+      <!-- 01 -->
+      <div class="questions-header">
+        <p class="eyebrow">01 · Tu producto</p>
+        <h2>Empecemos por lo esencial</h2>
+        <p>Responde con tus propias palabras. Si algo todavía no está definido, puedes escribir “no lo sé”.</p>
+      </div>
+      <div class="questions-grid">
+
+        <label>
+          <span>1. ¿Cómo se llama tu marca?</span>
+          <input type="text" name="q1_marca" required>
+        </label>
+
+        <label>
+          <span>2. ¿Qué producto vendes o quieres lanzar?</span>
+          <span style="font-size:0.85rem;color:var(--brand-gray);font-weight:400;">Ejemplo: café, botanas, especias, alimento para mascotas, miel, chocolate.</span>
+          <textarea name="q2_producto" rows="2" required></textarea>
+        </label>
+
+        <label>
+          <span>3. ¿Qué hace especial a tu producto?</span>
+          <span style="font-size:0.85rem;color:var(--brand-gray);font-weight:400;">Puede ser su receta, origen, ingredientes, proceso, sabor o la historia detrás de él.</span>
+          <textarea name="q3_especial" rows="2"></textarea>
+        </label>
+
+        <label>
+          <span>4. ¿Qué presentaciones tendrá?</span>
+          <span style="font-size:0.85rem;color:var(--brand-gray);font-weight:400;">Indica tamaños, pesos, sabores o variedades.</span>
+          <textarea name="q4_presentaciones" rows="2"></textarea>
+        </label>
+
+        <fieldset class="option-fieldset">
+          <legend>5. ¿Cómo empacas actualmente?</legend>
+          <div class="options-list">
+            <label class="option-pill"><input type="checkbox" name="q5_empaque" value="Bolsa genérica + etiqueta"> Bolsa genérica + etiqueta</label>
+            <label class="option-pill"><input type="checkbox" name="q5_empaque" value="Bolsa impresa"> Bolsa impresa</label>
+            <label class="option-pill"><input type="checkbox" name="q5_empaque" value="Frasco o caja"> Frasco o caja</label>
+            <label class="option-pill"><input type="checkbox" name="q5_empaque" value="Aún no empaco"> Aún no empaco</label>
+            <label class="option-pill"><input type="checkbox" name="q5_empaque" value="Otro"> Otro</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <!-- 02 -->
+      <div class="questions-header">
+        <p class="eyebrow">02 · Tus clientes y tu meta</p>
+        <h2>¿A quién queremos conectar?</h2>
+        <p>No necesitas tener un estudio de mercado; describe a las personas que normalmente compran tu producto.</p>
+      </div>
+      <div class="questions-grid">
+
+        <label>
+          <span>6. ¿Quién compra tu producto?</span>
+          <span style="font-size:0.85rem;color:var(--brand-gray);font-weight:400;">¿Qué edad tiene, qué le importa y por qué lo elegiría?</span>
+          <textarea name="q6_comprador" rows="2"></textarea>
+        </label>
+
+        <fieldset class="option-fieldset">
+          <legend>7. ¿Dónde vendes hoy?</legend>
+          <div class="options-list">
+            <label class="option-pill"><input type="checkbox" name="q7_ventas" value="Redes sociales"> Redes sociales</label>
+            <label class="option-pill"><input type="checkbox" name="q7_ventas" value="Tienda propia"> Tienda propia</label>
+            <label class="option-pill"><input type="checkbox" name="q7_ventas" value="Mercados"> Mercados</label>
+            <label class="option-pill"><input type="checkbox" name="q7_ventas" value="Cafeterías o tiendas"> Cafeterías o tiendas</label>
+            <label class="option-pill"><input type="checkbox" name="q7_ventas" value="Marketplaces"> Marketplaces</label>
+            <label class="option-pill"><input type="checkbox" name="q7_ventas" value="Distribuidores"> Distribuidores</label>
+            <label class="option-pill"><input type="checkbox" name="q7_ventas" value="Otro"> Otro</label>
+          </div>
+        </fieldset>
+
+        <label>
+          <span>8. ¿Dónde te gustaría vender en los próximos 2 o 3 años?</span>
+          <textarea name="q8_futuro" rows="2"></textarea>
+        </label>
+
+        <fieldset class="option-fieldset">
+          <legend>9. ¿Qué quieres lograr con este nuevo empaque?</legend>
+          <div class="options-list">
+            <label class="option-pill"><input type="checkbox" name="q9_meta" value="Verme más profesional"> Verme más profesional</label>
+            <label class="option-pill"><input type="checkbox" name="q9_meta" value="Destacar en anaquel"> Destacar en anaquel</label>
+            <label class="option-pill"><input type="checkbox" name="q9_meta" value="Dejar las etiquetas"> Dejar las etiquetas</label>
+            <label class="option-pill"><input type="checkbox" name="q9_meta" value="Entrar a nuevas tiendas"> Entrar a nuevas tiendas</label>
+            <label class="option-pill"><input type="checkbox" name="q9_meta" value="Lanzar una línea"> Lanzar una línea</label>
+            <label class="option-pill"><input type="checkbox" name="q9_meta" value="Subir valor percibido"> Subir valor percibido</label>
+            <label class="option-pill"><input type="checkbox" name="q9_meta" value="Otro"> Otro</label>
+          </div>
+        </fieldset>
+
+        <label>
+          <span>10. ¿Con qué marcas compites o cuáles admiras?</span>
+          <span style="font-size:0.85rem;color:var(--brand-gray);font-weight:400;">No importa si pertenecen a otra categoría.</span>
+          <textarea name="q10_competencia" rows="2"></textarea>
+        </label>
+      </div>
+
+      <!-- 03 -->
+      <div class="questions-header">
+        <p class="eyebrow">03 · Personalidad y contenido</p>
+        <h2>Démosle una personalidad</h2>
+        <p>Estas respuestas nos ayudan a crear un empaque que se sienta auténtico y coherente.</p>
+      </div>
+      <div class="questions-grid">
+
+        <fieldset class="option-fieldset">
+          <legend>11. Si tu marca fuera una persona, ¿cómo sería?</legend>
+          <div class="options-list">
+            <label class="option-pill"><input type="checkbox" name="q11_personalidad" value="Cercana"> Cercana</label>
+            <label class="option-pill"><input type="checkbox" name="q11_personalidad" value="Natural"> Natural</label>
+            <label class="option-pill"><input type="checkbox" name="q11_personalidad" value="Artesanal"> Artesanal</label>
+            <label class="option-pill"><input type="checkbox" name="q11_personalidad" value="Moderna"> Moderna</label>
+            <label class="option-pill"><input type="checkbox" name="q11_personalidad" value="Premium"> Premium</label>
+            <label class="option-pill"><input type="checkbox" name="q11_personalidad" value="Divertida"> Divertida</label>
+            <label class="option-pill"><input type="checkbox" name="q11_personalidad" value="Tradicional"> Tradicional</label>
+            <label class="option-pill"><input type="checkbox" name="q11_personalidad" value="Minimalista"> Minimalista</label>
+            <label class="option-pill"><input type="checkbox" name="q11_personalidad" value="Confiable"> Confiable</label>
+            <label class="option-pill"><input type="checkbox" name="q11_personalidad" value="Audaz"> Audaz</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="option-fieldset">
+          <legend>12. ¿Qué emoción quieres transmitir al verla?</legend>
+          <div class="options-list">
+            <label class="option-pill"><input type="checkbox" name="q12_emocion" value="Confianza"> Confianza</label>
+            <label class="option-pill"><input type="checkbox" name="q12_emocion" value="Calidad"> Calidad</label>
+            <label class="option-pill"><input type="checkbox" name="q12_emocion" value="Alegría"> Alegría</label>
+            <label class="option-pill"><input type="checkbox" name="q12_emocion" value="Bienestar"> Bienestar</label>
+            <label class="option-pill"><input type="checkbox" name="q12_emocion" value="Tradición"> Tradición</label>
+            <label class="option-pill"><input type="checkbox" name="q12_emocion" value="Energía"> Energía</label>
+            <label class="option-pill"><input type="checkbox" name="q12_emocion" value="Exclusividad"> Exclusividad</label>
+            <label class="option-pill"><input type="checkbox" name="q12_emocion" value="Cuidado"> Cuidado</label>
+          </div>
+        </fieldset>
+
+        <label>
+          <span>13. ¿Qué elementos debemos respetar?</span>
+          <span style="font-size:0.85rem;color:var(--brand-gray);font-weight:400;">Logo, colores, ilustraciones, personajes o cualquier elemento que tus clientes ya reconozcan.</span>
+          <textarea name="q13_elementos" rows="2"></textarea>
+        </label>
+
+        <fieldset class="option-fieldset">
+          <legend>14. ¿Ya cuentas con la información que debe llevar el empaque?</legend>
+          <div class="options-list">
+            <label class="option-pill"><input type="checkbox" name="q14_info" value="Ingredientes"> Ingredientes</label>
+            <label class="option-pill"><input type="checkbox" name="q14_info" value="Tabla nutrimental"> Tabla nutrimental</label>
+            <label class="option-pill"><input type="checkbox" name="q14_info" value="Código de barras"> Código de barras</label>
+            <label class="option-pill"><input type="checkbox" name="q14_info" value="Datos de contacto"> Datos de contacto</label>
+            <label class="option-pill"><input type="checkbox" name="q14_info" value="Contenido neto"> Contenido neto</label>
+            <label class="option-pill"><input type="checkbox" name="q14_info" value="Lote/caducidad"> Lote/caducidad</label>
+            <label class="option-pill"><input type="checkbox" name="q14_info" value="Aún no"> Aún no</label>
+          </div>
+        </fieldset>
+
+        <label>
+          <span>15. Si alguien viera tu producto durante 3 segundos, ¿qué única cosa te gustaría que recordara?</span>
+          <textarea name="q15_recuerdo" rows="2"></textarea>
+        </label>
+
+      </div>
+
+      <div class="questions-header" style="border-top:1px solid var(--border);padding-top:24px;">
+        <h2>Tus datos de contacto</h2>
+        <p>Para enviarte la cotización de tu empaque.</p>
+      </div>
+      <div class="questions-grid">
+        <label>
+          <span>Nombre y apellido</span>
+          <input type="text" name="contacto_nombre" required>
+        </label>
+        <label>
+          <span>Correo electrónico</span>
+          <input type="email" name="contacto_email" required>
+        </label>
+        <label>
+          <span>Teléfono o WhatsApp</span>
+          <input type="tel" name="contacto_telefono">
+        </label>
+
+        <button type="submit">Enviar mis respuestas a Evolupack</button>
+      </div>
+    </form>
+
+    <div id="confirmacion" class="card" style="display:none;margin-top:24px;">
+      <h2>¡Respuestas enviadas!</h2>
+      <p style="color:var(--brand-gray);">
+        Gracias, tus respuestas ya quedaron registradas. Nuestro equipo las revisará para preparar tu cotización.
+      </p>
+    </div>
+  </section>
+
+  <section class="cta-panel">
+    <div class="cta-copy">
+      <h2>Gracias por compartir tu historia.</h2>
+      <p>Con esta información podremos proponerte un camino claro para hacer crecer tu marca y enviarte una cotización de tu empaque.</p>
+    </div>
+  </section>
+
+  <footer>Diseñamos el empaque que hace crecer tu marca.</footer>
+</div>
+
+<script>
+// Pega aquí la URL de tu Google Apps Script Web App (termina en /exec).
+// Mientras esté vacía, el formulario solo usará el respaldo por correo/copiar.
+const SHEET_WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbzKZsnY0RMINAphSnGxVsKDcF5VfgwrsbN-J7Up93lhlP5X7Lg6new-BCnJZ0zFWOI2iA/exec';
+
+document.getElementById('discovery-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const form = e.target;
+  const data = new FormData(form);
+  const groups = {};
+  for (const [key, value] of data.entries()) {
+    if (groups[key] === undefined) {
+      groups[key] = [value];
+    } else {
+      groups[key].push(value);
+    }
+  }
+
+  const labels = {
+    q1_marca: '1. ¿Cómo se llama tu marca?',
+    q2_producto: '2. ¿Qué producto vendes o quieres lanzar?',
+    q3_especial: '3. ¿Qué hace especial a tu producto?',
+    q4_presentaciones: '4. ¿Qué presentaciones tendrá?',
+    q5_empaque: '5. ¿Cómo empacas actualmente?',
+    q6_comprador: '6. ¿Quién compra tu producto?',
+    q7_ventas: '7. ¿Dónde vendes hoy?',
+    q8_futuro: '8. ¿Dónde te gustaría vender en los próximos 2 o 3 años?',
+    q9_meta: '9. ¿Qué quieres lograr con este nuevo empaque?',
+    q10_competencia: '10. ¿Con qué marcas compites o cuáles admiras?',
+    q11_personalidad: '11. Si tu marca fuera una persona, ¿cómo sería?',
+    q12_emocion: '12. ¿Qué emoción quieres transmitir al verla?',
+    q13_elementos: '13. ¿Qué elementos debemos respetar?',
+    q14_info: '14. ¿Ya cuentas con la información que debe llevar el empaque?',
+    q15_recuerdo: '15. Si alguien viera tu producto durante 3 segundos, ¿qué única cosa te gustaría que recordara?',
+    contacto_nombre: 'Nombre y apellido',
+    contacto_email: 'Correo electrónico',
+    contacto_telefono: 'Teléfono o WhatsApp'
+  };
+
+  let body = 'Discovery Express — respuestas de ' + (groups.contacto_nombre ? groups.contacto_nombre[0] : '') + '\n\n';
+  for (const key in labels) {
+    const answer = groups[key] ? groups[key].filter(Boolean).join(', ') : '';
+    body += labels[key] + '\n' + (answer || '(sin respuesta)') + '\n\n';
+  }
+
+  const confirmacion = document.getElementById('confirmacion');
+  const submitBtn = form.querySelector('button[type="submit"]');
+
+  if (!SHEET_WEBAPP_URL) {
+    console.error('Falta configurar SHEET_WEBAPP_URL con la URL de tu Apps Script.');
+    return;
+  }
+
+  const payload = {};
+  for (const key in labels) {
+    payload[key] = groups[key] ? groups[key].filter(Boolean).join(', ') : '';
+  }
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Enviando…';
+
+  fetch(SHEET_WEBAPP_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(payload)
+  })
+    .then(function (res) { return res.text(); })
+    .then(function (text) {
+      console.log('Respuesta de Google Sheets:', text);
+      confirmacion.style.display = 'block';
+      confirmacion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      form.reset();
+    })
+    .catch(function (err) {
+      console.error('No se pudo guardar en Google Sheets:', err);
+      alert('No se pudieron enviar las respuestas. Revisa la consola (F12) para más detalles e inténtalo de nuevo.');
+    })
+    .finally(function () {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Enviar mis respuestas a Evolupack';
+    });
+});
+</script>
+</body>
+</html>
